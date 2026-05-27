@@ -17,6 +17,9 @@ env/
 .ipynb_checkpoints/
 *.ipynb_checkpoint
 
+# Training outputs (adapters, checkpoints)
+outputs/
+
 # HuggingFace cache (local-only, not for git)
 .hf_cache/
 cache/
@@ -24,7 +27,8 @@ cache/
 
 # Environment / secrets
 .env
-.env.local
+.env.*
+!.env.example
 *.token
 
 # IDE

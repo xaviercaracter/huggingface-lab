@@ -10,6 +10,7 @@ huggingface-lab/
 ├── pipelines/ # Quick pipeline experiments (text, image, audio, etc.)
 ├── models/ # Custom model loading and fine-tuning experiments
 ├── datasets/ # Dataset loading and preprocessing
+├── training/ # Chatbot fine-tuning (SFT + LoRA) and guides
 ├── notebooks/ # Jupyter notebooks for exploration
 └── utils/ # Shared utility functions
 
@@ -30,6 +31,14 @@ huggingface-cli login
 ### 3. Run a quick test
 ```bash
 python pipelines/text_generation.py
+```
+
+### 4. Train a chatbot (GPU + LoRA)
+See **[training/README.md](training/README.md)** for the full learning path.
+
+```bash
+python training/train_chatbot.py
+python training/chat_with_model.py --prompt "What is fine-tuning?"
 ```
 
 ## 🧪 Experiments
